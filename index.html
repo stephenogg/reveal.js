@@ -8,16 +8,185 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/sky.css">
+		<link rel="stylesheet" href="dist/theme/sky.css">
+
+		<!--Override some styles with the OME theme-->
+		<link rel="stylesheet" href="dist/theme/ome.css">
 
 		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="plugin/highlight/zenburn.css">
+
+		<style>
+            img:hover {
+                z-index: 10
+            }
+
+            body {
+                background: #f2f6f9;
+            }
+
+            .ome-theme body {
+                background-image: url(images/ome-icon-opacity.png);
+                background-color: #f2f6f9;
+                background-repeat: no-repeat;
+                background-position: right -270px top -120px;
+            }
+        </style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+
+
+				<!-- title page -->
+				<section data-state="ome-theme">
+					<h1>OMERO Workshop</h1>
+					<h2>KAUST Users</h2>
+					<p>March 2022<br>
+					Imaging & Characterization<br>
+					Optical Team</p>
+				</section>
+
+				<section data-state="ome-theme">
+					<h1>Outline</h1><br>
+						<ul>
+							<li>What is OME?</li><br>
+							<li>What is OMERO?</li><br>
+							<li>Workshop overview</li><br>
+						</ul>
+				</section>
+
+
+				<section data-state="ome-theme">
+					<h2>OME: Interoperability</h2>
+					<img src="images/ome-informatics.png">
+				</section>
+
+
+				<section data-state="ome-theme" data-background-size="971px" data-background="images/omero-platform-bg-0.png">
+					<h2>OMERO is a server with clients</h2>
+					<div style="width: 600px; height: 600px"></div>
+				</section>
+
+
+
+<section data-state="ome-theme" data-background-size="971px" data-background="images/omero-platform-bg-1.png">
+	<h2>Image Data - Read by Bio-Formats</h2><br>
+
+	<div style="height: 350px">
+	<ul>
+		<li>Support for reading > <b>150 image formats</b></li>
+		<li>Read pixel data and metadata</li>
+		<li>Includes 5D images, HCS data, Tiled WSI images</li>
+		<li>Domains: biological, medical, general</li>
+	</ul>
+	</div>
+</section>
+
+
+<section data-state="ome-theme" data-background-size="971px" data-background="images/omero-platform-bg-2.png">
+	<h2>Metadata</h2>
+
+	<div style="height: 350px">
+	<ul>
+		<li>Stored in a Relational Database</li>
+		<li>Acquisition Metadata</li>
+		<li>User-added Annotations</li>
+		<li>ROIs / Segmentations</li> <!-- Masks -->
+	</ul>
+	</div>
+</section>
+
+
+
+<section data-state="ome-theme" data-background-size="971px" data-background="images/omero-platform-bg-5.png">
+	<h2>Search</h2>
+
+	<div style="height: 350px">
+	<ul>
+		<li>Text and Annotations indexed!</li><br>
+		<li>Allows <b>rapid!</b> keyword searches</li>
+	</ul>
+	</div>
+</section>
+
+
+
+<section data-state="ome-theme" data-background-size="971px" data-background="images/omero-platform-bg-3.png">
+	<h2>OMERO.tables</h2>
+
+	<div style="height: 350px">
+	<ul>
+		<li>HDF5 tables for analytical results</li>
+		<li>Allows derived results to be attached<br>
+			to their parent data</li>
+		<li>Flexible columns</li>
+	</ul>
+	</div>
+</section>
+
+<section data-state="ome-theme" data-background="images/webclient-plate2.png">
+</section>
+
+<section data-state="ome-theme" data-background="images/webclient-svs2.png">
+</section>
+
+<section data-state="ome-theme" data-state="show_lionheart_ref" data-background="images/webclient-dicom2.png">
+</section>
+
+<section data-state="ome-theme" data-background-size="971px" data-background="images/omero-platform-bg-4.png">
+	<h2>OMERO API</h2>
+
+	<div style="height: 350px">
+	<!--<img src="images/logos/python.png" width = "75px">-->Python | Java | Matlab | R | C++
+	</div>
+</section>
+
+<section data-state="ome-theme">
+	<h2>Integration</h2>
+	<img src="images/integrationLogos/All.png" width="800px"/>
+	
+	
+	
+</section>
+
+<section data-state="ome-theme">
+	<h2>Open with... Web apps</h2>
+	<img src="images/openwith_viewers.png" width="900px"/>
+</section>    
+
+<!--<section data-state="ome-theme" style="width:120%">
+	<h2><a target="_blank" href="https://idr.openmicroscopy.org/">idr.openmicroscopy.org</a></h2>
+	<img src="images/idr.png" width="1900px"/>
+</section>-->
+
+<section data-state="ome-theme">
+	<h2>Today's workshop</h2>
+	<img src="images/omero-workshop-setup-all2.png" width="900px"/>
+</section>
+
+<section data-state="ome-theme">
+	<h2>Each other's data – read-annotate setup</h2>
+	<img src="images/permissions3-en.jpg" width="900px" height="600px"/>
+</section>
+
+<section data-state="ome-theme">
+	<h2>Thank you</h2>
+	<div class="funding_logo_container">
+		<img src="images/logos/bbsrc.png" class="funding_logo" />
+		<img src="images/logos/corbel.png" class="funding_logo" />
+		<img src="images/logos/wellcome.png" class="funding_logo" />
+		<img src="images/logos/global_bioimaging.png" class="funding_logo" />
+		<img src="images/logos/horizon_2020.png" class="funding_logo" />
+		<img src="images/logos/multimot.png" class="funding_logo" />
+		<img src="images/logos/euro_bioimaging.png" class="funding_logo" />
+	</div>
+</section>
+
+
+
+
 			</div>
 		</div>
 
